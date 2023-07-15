@@ -1,0 +1,33 @@
+Create an account on aws console using root user or IAM user.
+
+Open the Amazon EC2 console.
+
+From the EC2 console dashboard, select Launch Instance.
+
+Provide a name for the VM instance.
+
+In the Instance Type section, select the t2.micro instance type (default) or a larger instance type if needed. Note: the t2.micro instance type is elegible for the free tier. In regions where t2.micro is unavailable, 
+In the Key Pair (login) section, select the key pair name that you created in step 2 of the prerequisite section prerequisite section from the drop-down list.
+
+In the Network Settings section, under the  security groups choose the Select existing security group radio button. Then, under the Common Security Groups drop-down list, select the security group you created in step 3 of the prerequisite section. If the Auto-assign public IP setting is not set to Enable, click on the Edit button on the top-right of this section panel and change this setting appropriately./images/AWS_Setup_10.png
+In the Configure storage section, select the default amount of storage for this instance.
+
+Now, o select the Launch Instance.
+
+A confirmation page lets you know that your instance has successfully launched. In the top-most menu which reads EC2 > Instances > Launch an instance, select the Instances menu item to view the instances console window./images/AWS_Setup_09.png
+On the Instances screen, you can view the status of the launched instance. The instance should automatically be running after launch, but if not select the instance row checkbox and then select the Instance State menu item at the top. Select Start Instance to start the virtual machine.
+
+With the instance row selected, click the Connect button.
+
+On the Connect to instance page, select the RDP client tab. Select the Download remote desktop file and save the .rdp file somewhere on your local computer.
+
+Next, select the Get password button.
+
+Choose Upload private key file and navigate to the private key (.pem) file that you created when you launched the instance.
+
+Choose Decrypt Password and copy it. This password is required to connect to the instance.
+
+Select Download remote desktop file to save the .rdp file to your local computer. You will need this file when you connect to your instance using the Remote Desktop Connect app.
+ you successfully launched a virtual machine on AWS and downloaded the RDP file which can be used to connect to that instance.
+enter the decrypted password on that file click connect.
+Your virtual window will appear.
